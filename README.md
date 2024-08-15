@@ -85,7 +85,7 @@ In data engineering, efficiency and scalability are key. My Azure Serverless Dat
 
 ## 📄 Resume
 
-You can download my resume [here](resume.pdf).
+You can download my resume [here](https://github.com/skmahaboob/skmahaboob.github.io/blob/c650275c735db0385fe5f65fb3938af945e163dc/Mahaboob_Sheik_Data_Engineer.pdf).
 
 ## 🌐 Website
 
