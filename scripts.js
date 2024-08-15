@@ -1,5 +1,3 @@
-// Example of adding JavaScript functionality
-
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
