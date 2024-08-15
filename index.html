@@ -5,62 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief introduction about yourself.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Brief description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
+    <section id="hero">
+        <div class="container">
+            <h2>Hello, I'm Your Name</h2>
+            <p>I'm a Data Engineer specializing in Big Data, Cloud Solutions, and Data Analytics.</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
-        <!-- Repeat for more projects -->
     </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Certification 1</li>
-            <li>Certification 2</li>
-            <!-- Add more certifications as needed -->
-        </ul>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A brief introduction about yourself. Connect with me on <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a> or check out my projects on <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
+        </div>
     </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download My Resume</a>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Python</div>
+                <div class="skill">Apache Spark</div>
+                <div class="skill">Azure Databricks</div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" target="_blank" class="btn">View Project</a>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certification 1</li>
+                <li>Certification 2</li>
+                <!-- Add more certifications as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.pdf" download class="btn">Download My Resume</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
