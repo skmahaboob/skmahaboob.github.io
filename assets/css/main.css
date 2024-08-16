@@ -4687,3 +4687,130 @@ input, select, textarea {
 		}
 
 	}
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted column size */
+		gap: 25px; /* Increased gap between grid items */
+		margin-top: 20px; /* Increased top margin for spacing */
+	}
+	
+	.skill-item {
+		text-align: center;
+		padding: 15px; /* Increased padding for a more spacious layout */
+		background-color: #ffffff; /* Changed background to white */
+		border-radius: 12px; /* Increased border-radius for more rounded corners */
+		border: 1px solid #ddd; /* Added a subtle border */
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.skill-item:hover {
+		transform: translateY(-8px); /* Enhanced hover lift */
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
+	}
+	
+	.skill-item img {
+		max-width: 70px; /* Increased image size for better visibility */
+		margin-bottom: 12px; /* Slightly increased space below image */
+	}
+	
+	.skill-item span {
+		display: block;
+		font-size: 18px; /* Increased font size for better readability */
+		font-weight: 600;
+		color: #222; /* Darkened text color */
+	}
+	.post .skills-grid {
+		margin-bottom: 40px; /* Adds extra space below the last skill grid of the previous section */
+	}
+	
+	/* Specific margin for Databases section header */
+	.post h2:nth-of-type(2) {
+		margin-top: 60px; /* Adjust this value to control the space above the Databases header */
+	}
+	
+	/* General section styling for other headers */
+	.post h2 {
+		margin-top: 40px; /* Space above each section */
+		margin-bottom: 20px; /* Space below each section header */
+		font-size: 24px; /* Adjust font size as needed */
+		font-weight: bold; /* Make headers bold */
+		color: #333; /* Adjust color if needed */
+	}
+	/* Certifications Section */
+.certifications {
+    margin-top: 40px; /* Space above the certifications section */
+}
+
+.certifications h2 {
+    margin-bottom: 20px; /* Space below the section header */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make header bold */
+    color: #333; /* Adjust color if needed */
+}
+
+.certifications p {
+    margin-bottom: 30px; /* Space below the introductory paragraph */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #666; /* Adjust color if needed */
+}
+
+/* List of certifications */
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size */
+    gap: 20px; /* Space between items */
+}
+
+/* Certifications Section */
+.certifications {
+    margin-top: 40px; /* Space above the certifications section */
+}
+
+.certifications h2 {
+    margin-bottom: 20px; /* Space below the section header */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make header bold */
+    color: #333; /* Adjust color if needed */
+}
+
+.certifications p {
+    margin-bottom: 30px; /* Space below the introductory paragraph */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #666; /* Adjust color if needed */
+}
+
+/* List of certifications */
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for certifications */
+    gap: 20px; /* Space between items */
+}
+
+/* Certification item styling */
+.certification-item {
+    text-align: center;
+    background-color: #f4f4f4; /* Background color for the item */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.certification-item img {
+    width: 100px; /* Set fixed width for the image */
+    height: 100px; /* Set fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.certification-item span {
+    display: block;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 600; /* Make text bold */
+    color: #333; /* Adjust color if needed */
+}
+
+.certification-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
