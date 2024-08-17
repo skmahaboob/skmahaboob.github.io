@@ -4738,83 +4738,79 @@ input, select, textarea {
 		color: #333; /* Adjust color if needed */
 	}
 	/* Certifications Section */
-.certifications {
-    margin-top: 40px; /* Space above the certifications section */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
 
-}
-
-.certifications h2 {
-    margin-bottom: 20px; /* Space below the section header */
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold; /* Make header bold */
-    color: #333; /* Adjust color if needed */
-}
-
-.certifications p {
-    margin-bottom: 30px; /* Space below the introductory paragraph */
-    font-size: 16px; /* Adjust font size as needed */
-    color: #666; /* Adjust color if needed */
-}
-
-/* List of certifications */
-.certifications-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size */
-    gap: 20px; /* Space between items */
-}
-
-/* Certifications Section */
-.certifications {
-    margin-top: 40px; /* Space above the certifications section */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-
-}
-
-.certifications h2 {
-    margin-bottom: 20px; /* Space below the section header */
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold; /* Make header bold */
-    color: #333; /* Adjust color if needed */
-}
-
-.certifications p {
-    margin-bottom: 30px; /* Space below the introductory paragraph */
-    font-size: 16px; /* Adjust font size as needed */
-    color: #666; /* Adjust color if needed */
-}
-
-/* List of certifications */
-.certifications-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for certifications */
-    gap: 20px; /* Space between items */
-}
-
-/* Certification item styling */
-.certification-item {
-    text-align: center;
-    background-color: #f4f4f4; /* Background color for the item */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Padding inside the item */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-}
-
-.certification-item img {
-    width: 100px; /* Set fixed width for the image */
-    height: 100px; /* Set fixed height for the image */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
-    margin-bottom: 10px; /* Space below the image */
-}
-
-.certification-item span {
-    display: block;
-    font-size: 16px; /* Adjust font size as needed */
-    font-weight: 600; /* Make text bold */
-    color: #333; /* Adjust color if needed */
-}
-
-.certification-item:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-}
+	.certifications {
+		margin-top: 40px; /* Space above the certifications section */
+		overflow-x: hidden; /* Hide horizontal overflow */
+	}
+	
+	.certifications h2 {
+		margin-bottom: 20px; /* Space below the section header */
+		font-size: 24px; /* Adjust font size as needed */
+		font-weight: bold; /* Make header bold */
+		color: #333; /* Adjust color if needed */
+	}
+	
+	.certifications p {
+		margin-bottom: 30px; /* Space below the introductory paragraph */
+		font-size: 16px; /* Adjust font size as needed */
+		color: #666; /* Adjust color if needed */
+	}
+	
+	/* List of certifications */
+	.certifications-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+		gap: 20px; /* Space between items */
+		padding: 0 10px; /* Add some padding for better visibility */
+	}
+	
+	/* Certification item styling */
+	.certification-item {
+		text-align: center;
+		background-color: #f4f4f4; /* Background color for the item */
+		border-radius: 10px; /* Rounded corners */
+		padding: 15px; /* Padding inside the item */
+		transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+		box-sizing: border-box; /* Include padding and border in the element's total width and height */
+	}
+	
+	.certification-item img {
+		width: 100px; /* Set fixed width for the image */
+		height: 100px; /* Set fixed height for the image */
+		object-fit: cover; /* Maintain aspect ratio and cover the area */
+		margin-bottom: 10px; /* Space below the image */
+	}
+	
+	.certification-item span {
+		display: block;
+		font-size: 16px; /* Adjust font size as needed */
+		font-weight: 600; /* Make text bold */
+		color: #333; /* Adjust color if needed */
+	}
+	
+	.certification-item:hover {
+		transform: translateY(-5px); /* Slight lift on hover */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+	}
+	
+	/* Media queries for responsive design */
+	@media (max-width: 1024px) {
+		.certifications-list {
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size for tablets and smaller screens */
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.certifications-list {
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size for mobile devices */
+			padding: 0 5px; /* Adjust padding for smaller screens */
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.certifications-list {
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column size for very small screens */
+		}
+	}
+	
