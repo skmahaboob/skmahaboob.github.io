@@ -4740,6 +4740,8 @@ input, select, textarea {
 	/* Certifications Section */
 .certifications {
     margin-top: 40px; /* Space above the certifications section */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+
 }
 
 .certifications h2 {
@@ -4765,6 +4767,8 @@ input, select, textarea {
 /* Certifications Section */
 .certifications {
     margin-top: 40px; /* Space above the certifications section */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+
 }
 
 .certifications h2 {
